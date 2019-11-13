@@ -1,3 +1,30 @@
+body {
+  background-color: black;
+  color: orange;
+}
+
+.recipeFinder {
+  height: 50px;
+  background-color: lightgray;
+  text-shadow: 3px 3px gray;
+  opacity: 0.8;
+}
+
+.btn-letter {
+  height: 45px;
+  width: 51px;
+  margin: 2px;
+  background-color: orange;
+  border: 2px solid gray;
+  border-top: none;
+  border-bottom: none;
+  border-radius: 2px;
+  color: gray;
+  font-size: 20px;
+  opacity: 0.5;
+
+}
+
 .App {
   text-align: center;
 }
