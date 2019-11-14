@@ -36,15 +36,21 @@ class Header extends Component {
                 <div>
                     <h1 className='recipeFinder'>Recipe Finder</h1>
                 </div>
-            <p>Get Recipes By Letter</p>
+            <p className='recipeByLetter'>Get Recipes By Letter</p>
             {this.generateLetterButtons()}
-            <p>Get Recipes By Keyword</p>
-            <form onSubmit={this.handleSubmit}>
-                <input type='text' value={this.state.textFieldValue} onChange={this.handleChange} />
-                <input type='submit' value='Submit' />
-            </form>
-            <p>Get Random Recipe</p>
-            <button onClick={() => this.props.randomRecipeHandler()}>Submit</button>
+                <div>
+                    <div>
+                    <p className='recipeByKeyword'>Get Recipes By Keyword</p>
+                    <form onSubmit={this.handleSubmit}>
+                        <input className='textBox' type='text' value={this.state.textFieldValue} onChange={this.handleChange} />
+                        <input className='submitText' type='submit' value='Submit' />
+                    </form>
+                    </div>
+                    <div className='randomRecipeDiv'>
+                        <p className='randomRecipe'>Get Random Recipe</p>
+                        <button onClick={() => this.props.randomRecipeHandler()} className='submitBtn'>Submit</button>
+                    </div>
+                </div>
             </div>
         );
     }
