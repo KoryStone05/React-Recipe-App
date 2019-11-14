@@ -15,10 +15,10 @@ function App() {
     <Router>
       <nav>
         <ul>
-          <li>
+          <li className='homeLink'>
             <Link to='/'>Home</Link>
           </li>
-          <li>
+          <li className='aboutLink'>
             <Link to='/about'>About</Link>
           </li>
         </ul>

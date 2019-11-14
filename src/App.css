@@ -62,6 +62,16 @@ body {
   border-radius: 5px;
 }
 
+.homeLink {
+  font-size: 25pt;
+  float: left;
+}
+
+.aboutLink {
+  font-size: 25pt;
+  float: left;
+}
+
 .App {
   text-align: center;
 }
